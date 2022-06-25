@@ -32,6 +32,10 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
+-- Move buffer Tabs
+keymap("n", "<S-n>", ":BufferLineMoveNext<CR>", opts)
+keymap("n", "<S-j>", ":BufferLineMovePrev<CR>", opts)
+
 -- Clear highlights
 keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
 
@@ -58,6 +62,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- NvimTree
 keymap("n", "<A-x>", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<A-r>", ":NvimTreeRefresh<CR>", opts)
 
 -- Telescope
 keymap("n", "<leader>pf", ":Telescope find_files<CR>", opts)
